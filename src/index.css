@@ -8,43 +8,45 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 220 15% 10%;
+    --background: 160 10% 8%;
     --foreground: 0 0% 95%;
 
-    --card: 220 12% 14%;
+    --card: 150 8% 12%;
     --card-foreground: 0 0% 95%;
 
-    --popover: 220 12% 14%;
+    --popover: 150 8% 12%;
     --popover-foreground: 0 0% 95%;
 
     --primary: 25 85% 75%;
-    --primary-foreground: 220 15% 10%;
+    --primary-foreground: 160 10% 8%;
 
-    --secondary: 220 12% 18%;
+    --secondary: 150 8% 12%;
     --secondary-foreground: 0 0% 95%;
 
-    --muted: 220 12% 20%;
+    --muted: 155 13% 17%;
     --muted-foreground: 0 0% 55%;
 
     --accent: 150 50% 75%;
-    --accent-foreground: 220 15% 10%;
+    --accent-foreground: 160 10% 8%;
 
     --destructive: 0 72% 58%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 220 12% 20%;
-    --input: 220 12% 20%;
+    --border: 150 8% 15%;
+    --input: 150 8% 12%;
     --ring: 25 85% 75%;
 
     --radius: 1rem;
 
     --success: 150 50% 75%;
-    --success-foreground: 220 15% 10%;
+    --success-foreground: 160 10% 8%;
 
     --badge-expired: 0 72% 58%;
     --badge-expired-foreground: 0 0% 98%;
 
     --star: 45 95% 60%;
+    
+    --plan-card: 155 13% 17%;
   }
 }
 

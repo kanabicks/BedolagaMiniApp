@@ -1,6 +1,7 @@
 import { VPNHeader } from "@/components/VPNHeader";
 import { StatsCard } from "@/components/StatsCard";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import { CollapsibleSection } from "@/components/CollapsibleSection";
 import { SubscriptionPlans } from "@/components/SubscriptionPlans";
 import { DiscountSystem } from "@/components/DiscountSystem";
@@ -29,9 +30,10 @@ const Index = () => {
             <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
               Пополнить
             </Button>
-            <Button variant="outline" className="w-full border-primary text-foreground bg-card hover:bg-secondary">
-              Введите промокод
-            </Button>
+            <Input 
+              placeholder="Введите промокод" 
+              className="w-full bg-card border-primary text-foreground"
+            />
             <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
               Активировать
             </Button>

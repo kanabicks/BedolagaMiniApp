@@ -24,8 +24,8 @@ export function SubscriptionPlans() {
             onClick={() => setSelectedPlan(index)}
             className={`relative p-4 rounded-xl border-2 transition-all ${
               selectedPlan === index
-                ? "border-primary bg-secondary"
-                : "border-border bg-card"
+                ? "border-primary bg-muted"
+                : "border-border bg-muted"
             }`}
           >
             {plan.featured && (
