@@ -41,17 +41,17 @@ export function SubscriptionOptions() {
             <button
               key={index}
               onClick={() => toggleLocation(index)}
-              className={`p-3 rounded-lg border-2 transition-all ${
+              className={`p-3 rounded-lg border-2 transition-all bg-muted relative ${
                 selectedLocations.includes(index)
-                  ? "border-primary bg-secondary"
-                  : "border-border bg-card"
+                  ? "border-primary"
+                  : "border-border"
               }`}
             >
-              <div className="flex items-center gap-2 mb-1">
+              <div className="flex items-center gap-2 justify-start">
                 <span>{location.flag}</span>
                 <span className="text-sm">{location.name}</span>
               </div>
-              <div className="text-sm font-bold">{location.price} ₽</div>
+              <div className="text-lg font-bold absolute bottom-3 right-3">{location.price} ₽</div>
             </button>
           ))}
         </div>
@@ -64,13 +64,13 @@ export function SubscriptionOptions() {
             <button
               key={index}
               onClick={() => setSelectedTraffic(index)}
-              className={`p-3 rounded-lg border-2 transition-all ${
+              className={`p-3 rounded-lg border-2 transition-all bg-muted ${
                 selectedTraffic === index
-                  ? "border-primary bg-secondary"
-                  : "border-border bg-card"
+                  ? "border-primary"
+                  : "border-border"
               }`}
             >
-              <div className="text-xs mb-1">{option.size}</div>
+              <div className="text-xs font-bold mb-1">{option.size}</div>
               <div className="text-sm font-bold">{option.price} ₽</div>
             </button>
           ))}
@@ -79,17 +79,17 @@ export function SubscriptionOptions() {
 
       <div>
         <p className="text-sm font-medium mb-3">Количество устройств</p>
-        <div className="flex items-center justify-center gap-4 bg-card rounded-lg p-4">
+        <div className="flex items-center justify-between bg-card rounded-lg p-4">
           <button
             onClick={() => setDeviceCount(Math.max(1, deviceCount - 1))}
-            className="w-10 h-10 rounded-full bg-primary flex items-center justify-center hover:opacity-80 transition-opacity"
+            className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center hover:opacity-80 transition-opacity"
           >
             <Minus className="w-5 h-5 text-primary-foreground" />
           </button>
-          <span className="text-2xl font-bold w-12 text-center">{deviceCount}</span>
+          <span className="text-2xl font-bold">{deviceCount}</span>
           <button
             onClick={() => setDeviceCount(deviceCount + 1)}
-            className="w-10 h-10 rounded-full bg-primary flex items-center justify-center hover:opacity-80 transition-opacity"
+            className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center hover:opacity-80 transition-opacity"
           >
             <Plus className="w-5 h-5 text-primary-foreground" />
           </button>
