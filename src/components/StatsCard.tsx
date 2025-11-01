@@ -20,12 +20,12 @@ export function StatsCard({
   return (
     <div className="bg-card rounded-2xl p-5 space-y-4 border border-border/50">
       <div className="bg-muted rounded-xl p-4 grid grid-cols-2 gap-4">
-        <div>
-          <p className="text-xs text-muted-foreground mb-2">Подписка истекает</p>
+        <div className="flex items-center justify-between">
+          <p className="text-xs text-muted-foreground">Подписка истекает</p>
           <p className="text-base font-bold text-foreground">{subscriptionExpires}</p>
         </div>
-        <div>
-          <p className="text-xs text-muted-foreground mb-2">Дней осталось:</p>
+        <div className="flex items-center justify-between">
+          <p className="text-xs text-muted-foreground">Дней осталось:</p>
           <p className="text-base font-bold text-foreground">{daysLeft}</p>
         </div>
       </div>
@@ -41,8 +41,8 @@ export function StatsCard({
         </div>
       </div>
 
-      <div className="bg-muted rounded-xl p-4">
-        <p className="text-xs text-muted-foreground mb-2">Ваш баланс</p>
+      <div className="bg-muted rounded-xl p-4 flex items-center justify-between">
+        <p className="text-xs text-muted-foreground">Ваш баланс</p>
         <p className="text-2xl font-bold text-foreground">{balance} ₽</p>
       </div>
     </div>
